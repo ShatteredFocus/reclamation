@@ -196,10 +196,7 @@ def weapon():
                 print('Concussion Grenade '+RoF)
         if STR>2:
             print('Grenade '+RoF)
-            print('STR:'+STR+' AP:'+AP)
-        STR=str(STR)
-        AP=str(AP)
-        RoF=str(RoF)            
+            print('STR:'+str(STR)+' AP:'+str(AP))            
 
 def armour():
     ArmourType=random.randint(1,7)
@@ -289,8 +286,8 @@ while Loot<3:
     print('---------------------')
     if LootCrate==1:
         character()
-    if LootCrate == 2:
+    elif LootCrate == 2:
         weapon()
-    if LootCrate==3:
+    elif LootCrate==3:
         armour()
     Loot=Loot+1
